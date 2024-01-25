@@ -1,7 +1,7 @@
 ﻿# Edit this vars
-$netbox_srv = "https://rnd-netbox.gloria.aaanet.ru"
-$token = "cab0637865c510fc5e59f749315d874ff29086b9" # netbox token
-$path_to_csv = "C:\Users\dmitriev.bn1\Scripts\vh.csv" 
+$netbox_srv = "https://<netbox_address>"
+$token = "<netbox_token>" # netbox token
+$path_to_csv = "<path_to_csv-file>" 
 
 # Connection headers
 $Headers = @{}
