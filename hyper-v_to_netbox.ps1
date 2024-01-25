@@ -1,4 +1,10 @@
-﻿# Edit this vars
+### Block of editable variables
+# $netbox_srv - netbox server address
+# $token - netbox API token
+# $path_to_csv - path to csv file. Csv example:
+#        site;cluster;server
+#        <Site_Name>;<Cluster_Name>;<Server_Name>
+###
 $netbox_srv = "https://<netbox_address>"
 $token = "<netbox_token>"
 $path_to_csv = "<path_to_csv>" 
