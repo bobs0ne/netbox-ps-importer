@@ -63,6 +63,6 @@ $jsondata = @{"name"=$vm.Name;
            }
 
 Invoke-RestMethod -Uri $vm_uri -Headers $Headers -Method POST -Body ($jsondata | ConvertTo-Json)
-}
+    }
 }
 
