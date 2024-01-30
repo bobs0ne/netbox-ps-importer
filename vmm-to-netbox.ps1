@@ -149,7 +149,7 @@ $cluster_uri = "$netbox_srv/api/virtualization/clusters/"
 # Get Data from VMM                #
 ####################################
 
-$vms_details = Get-SCVirtualMachine -VMHost "lug-vh4" | Foreach-Object {
+$vms_details = Get-SCVirtualMachine | Foreach-Object {
     $ipv4 = ($_ | Get-SCVirtualNetworkAdapter).ipv4Addresses
     $_ | Select-Object *,@{N='ipv4Addresses';E={$ipv4}}}
 
