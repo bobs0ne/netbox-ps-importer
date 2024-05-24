@@ -88,7 +88,7 @@ Function get-vm-from-vmm ($vh_vm) {
             $global:ipstatus = "active"}
         else 
         {
-            if ($state -eq 'Off') 
+            if ($state -eq 'PowerOff') 
             {
                 $global:status = "offline"
                 $global:ipstatus = "reserved"
